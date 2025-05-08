@@ -155,6 +155,12 @@ const getImageBtn = document.getElementById("get-image-btn");
 const gifsOnlyOption = document.getElementById("gifs-only-option");
 const memeModal = document.getElementById("meme-modal");
 const memeModalInner = document.getElementById("meme-modal-inner");
+const meanModalClobtn = document.getElementById("meme-modal-close-btn");
+
+meanModalClobtn.addEventListener("click", closeModal)
+function closeModal(){
+  memeModal.style.display = "none";
+}
 
 getImageBtn.addEventListener("click", renderCat);
 
@@ -235,3 +241,14 @@ function renderEmotionRadios(cats) {
 }
 
 renderEmotionRadios(catsData);
+
+
+//for of
+//import export
+//radio & checkbox inputs
+//querySelector
+//getElementByClassName
+//ClassList.remove ClassList.add
+//.includes()
+//.filter()
+//.parentElement
